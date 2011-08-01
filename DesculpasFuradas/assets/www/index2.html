@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Integrando com a API PhoneGap</title>
+<script type="text/javascript" charset="utf-8" src="phonegap.0.9.6.js" />
+<script type="text/javascript" charset="utf-8">
+    document.addEventListener("deviceready", exibirInfo, false);
+    function exibirInfo() {
+        var saida = document.getElementById("saida");
+        saida.innerHTML   = 'Device Name: '     + device.name     + '<br />' + 
+                            'Device PhoneGap: ' + device.phonegap + '<br />' + 
+                            'Device Platform: ' + device.platform + '<br />' + 
+                            'Device UUID: '     + device.uuid     + '<br />' + 
+                            'Device Version: '  + device.version  + '<br />';
+    }
+    function vibrar() {
+ 		navigator.notification.alert("Vibrando",
+            "Funcionou?",
+            "OK");
+    
+    	navigator.notification.vibrate(2000);
+    }
+</script>
+</head>
+<body>
+<h3>Informa&ccedil;&otilde;es</h3>
+<div id="saida">
+<p>Inicializando o PhoneGap...</p>
+</div>
+<input type="button" onclick="vibrar(); return false;" value="Vibrar" />
+</body>
+</html>
+     
