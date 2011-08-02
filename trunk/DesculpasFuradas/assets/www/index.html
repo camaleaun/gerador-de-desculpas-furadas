@@ -102,18 +102,19 @@ function compartilhar() {
 </script>
 </head>
 <body>
-<h3>Gerador de desculpas furadas</h3>
 <div id="anuncios">
 <script type="text/javascript">
 var admob_vars = {
  pubid: 'a14e36dc3566cbc', // publisher id
  bgcolor: '000000', // background color (hex)
  text: 'FFFFFF', // font-color (hex)
- test: true // test mode, set to false to receive live ads
+ test: false // test mode, set to false to receive live ads
 };
 </script>
 <script type="text/javascript" src="http://mmv.admob.com/static/iphone/iadmob.js"></script>
 </div>
+<h3>Gerador de desculpas furadas</h3>
+
 <div id="output">
 </div>
 <br/>
@@ -121,6 +122,9 @@ var admob_vars = {
        onclick="document.getElementById('output').innerHTML = generate()" />
 <input type="button" value="Compartilhar"
        onclick="compartilhar()" />
+<div id="imagem" style="max-width: 100%">
+<br/><a href="http://www.thecodebakers.org"><img src="images/logo.png" border="0" style="max-width:100%"/></a>
+</div>
 </body>
 </html>
      
