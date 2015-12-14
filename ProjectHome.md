@@ -1,0 +1,1 @@
+Gera desculpas esfarrapadas para atrasos e estouros de orçamentos em projetos.
